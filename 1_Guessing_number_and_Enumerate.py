@@ -2,26 +2,57 @@
 # enum=list(enumerate(cities,2))
 # print(enum)
 
+################################# MI SOLUCION ###############################################
+
+# import random
+
+# def guessing_name():
+#     objective=random.randint(0,100)
+#     print(objective)
+#     guessed_number=int(input('Please enter number: '))
+
+#     while guessed_number!=objective:
+#         if guessed_number>objective:
+#             print('Too High')
+#             guessed_number=int(input('Please enter number: '))
+
+#         else:
+#             print('Too low')
+#             guessed_number=int(input('Please enter number: '))
+
+#     print('Just right')
+
+# def run():
+#     guessing_name()
+
+# if __name__== '__main__':
+#     run()
+
+################################# BOOK'S SOLUTION ###############################################
 import random
 
-def guessing_name():
-    objective=random.randint(0,100)
-    print(objective)
-    guessed_number=int(input('Please enter number: '))
+def guessing_game():
+    answer = random.randint(0, 100)
+    print(answer)
+    counter=1
 
-    while guessed_number!=objective:
-        if guessed_number>objective:
-            print('Too High')
-            guessed_number=int(input('Please enter number: '))
-
+    while counter<4:
+        user_guess = int(input('What is your guess? '))
+        if user_guess == answer:
+            print(f'Right! The answer is {user_guess}')
+            break
+        if user_guess < answer:
+            print(f'Your guess of {user_guess} is too low!')
+            counter +=1
         else:
-            print('Too low')
-            guessed_number=int(input('Please enter number: '))
+            print(f'Your guess of {user_guess} is too high!')
+            counter +=1
 
-    print('Just right')
+    print('You didn\'t guess in time')
     
+
 def run():
-    guessing_name()
+    guessing_game()
 
 if __name__== '__main__':
-    run()
+    run() 
