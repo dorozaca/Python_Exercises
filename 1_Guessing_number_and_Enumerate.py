@@ -33,11 +33,11 @@ import random
 
 def guessing_game():
     answer = random.randint(0, 100)
-    print(answer)
+    
     counter=1
 
-    while counter<4:
-        user_guess = int(input('What is your guess? '))
+    while counter<10:
+        user_guess = int(input('What is your guess Izzy crazy? '))
         if user_guess == answer:
             print(f'Right! The answer is {user_guess}')
             break
