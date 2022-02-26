@@ -6,7 +6,7 @@ def run():
 
     planets=[('Saturn',123,458),('Jupyter',421315,34445),('Venus',45664,7487)]
     distance=lambda x:x[1]
-    planets.sort(key=distance,reverse=True) #possible to use key and reverse, but sort modifies the original list
+    planets.sort(key=distance,reverse=True) #possible to use key and reverse, but sort MODIFIES the original list
     print(planets)                          #that is why cannot be applied to tuples
 
     numbers=(5,7,9,8,4)         #To order a tuple or even a list
