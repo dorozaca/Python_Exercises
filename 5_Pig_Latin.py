@@ -42,7 +42,7 @@
 def pig_latin(string):
     vowels=['a','e ','i','o','u']
 
-    if string[0] in vowels:
+    if string[0] in vowels:     #This if xx in  yy is Key sentence
         return f'{string}way'
 
     else:
