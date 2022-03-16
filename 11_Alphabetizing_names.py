@@ -34,6 +34,6 @@ def iterating2(listado):
     return container2
 
 
-
-print(iterating(alphabetize_names(PEOPLE)))
-print(iterating2(alphabetize_names(PEOPLE)))
+print(alphabetize_names(PEOPLE))
+#print(iterating(alphabetize_names(PEOPLE)))
+#print(iterating2(alphabetize_names(PEOPLE)))
